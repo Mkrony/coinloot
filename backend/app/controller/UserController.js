@@ -387,7 +387,7 @@ export const Login = async (req, res) => {
             httpOnly: false,
             secure: true,
             sameSite: "None",
-           maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days
+            maxAge: 30 * 24 * 60 * 60 * 1000
         });
         // Update user record
         user.last_login = new Date();
@@ -972,3 +972,4 @@ export const ResetPassword = async (req, res) => {
         });
     }
 };
+
